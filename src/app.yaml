@@ -1,0 +1,28 @@
+application: ll-news-bot
+version: 8
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  script: tweet.app
+  login: admin  
+
+- url: /tweet
+  script: tweet.app
+  
+- url: /followme
+  script: tweet.app
+  login: admin
+
+- url: /follow
+  script: follow.app
+
+- url: /refollow
+  script: follow.app
+  login: admin
+   
+- url: /unfollow
+  script: follow.app
+  login: admin

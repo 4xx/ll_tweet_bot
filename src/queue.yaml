@@ -1,0 +1,12 @@
+queue:
+- name: tweet
+  rate: 1/s
+  bucket_size: 1 
+  retry_parameters:
+    task_retry_limit: 0
+    
+- name: follow
+  rate: 1/s
+  bucket_size: 2
+  retry_parameters:
+    task_retry_limit: 0

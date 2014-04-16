@@ -1,0 +1,22 @@
+cron:
+- description: tweet task
+  url: /
+  schedule: every 30 minutes from 9:00 to 23:59
+  timezone: Asia/Tokyo
+
+- description: followme task
+  url: /followme
+  schedule: every day 18:30
+  timezone: Asia/Tokyo
+  
+- description: refollow task
+  url: /refollow
+  schedule: every 30 minutes from 6:00 to 23:59
+  timezone: Asia/Tokyo
+  
+- description: unfollow task
+  url: /unfollow
+  schedule: every 1 hours from 0:00 to 5:59
+  timezone: Asia/Tokyo
+  
+  
